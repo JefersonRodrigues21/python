@@ -8,12 +8,12 @@ def dividir(n1, n2):
         return resultado
 
 divisao = dividir(80, 0)
-print('O resultado da divisão é:', divisao)
+print("O resultado da divisão é", divisao)
 
-print('Resultado', dividir(20, 4))
+print("Resultado", dividir(20, 4))
 
-resultado = dividir(3, 1)
+resultado = dividir(3, 5)
 soma = 20 + resultado
-print('A soma é:', soma)
+print("A soma é", soma)
 
-dividir(6, 0)
+dividir(6, 3)
