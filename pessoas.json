@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "Joao",
+        "telefone": "(65) 97777-7777",
+        "endereco": "Rua A, 123"
+    },
+    {
+        "nome": "Maria",
+        "telefone": "(65) 98888-8888",
+        "endereco": "Rua B, 456"
+    },
+    {
+        "nome": "Jose",
+        "telefone": "(65) 99999-9999",
+        "endereco": "Rua C, 789"
+    }
+]
