@@ -36,7 +36,7 @@ class Imovel(ABC):
         print(self.__dict__)
     
     def calcularImposto(self):
-        return self.valor * 0.02
+        return self._valor * 0.02
 
     @abstractmethod
     def aluguelSugerido(self):
@@ -55,6 +55,15 @@ class ImovelComercial(Imovel):
     
     def aluguelSugerido(self):
         return self._valor * 0.015
+
+    def calcularImposto(self):
+        match self._uf:
+            case 'DF': taxa = 0.03
+            case 'SP': taxa = 0.04
+            case 'RJ': taxa = 0.025
+            case other: taxa = 0.02
+
+        return self._valor * taxa
 
 class ImovelRural():
     def __init__(self, hectares = '', curral = '', produtiva = True):
@@ -88,12 +97,13 @@ casa = ImovelResidencial('Minha Casa', 'SP', 300000)
 casa.nome = 'Casa muito Bonita'
 print(casa.nome)
 casa.uf = 'RJ'
-casa.detalhar()
+#casa.detalhar()
+print(casa.calcularImposto())
+#print(casa.aluguelSugerido())
 
-print(casa.aluguelSugerido())
-
-clinica = ImovelComercial('Clinica x', 'SP', 800000)
+clinica = ImovelComercial('Clinica x', 'AL', 800000)
 #clinica.detalhar()
+print(clinica.calcularImposto())
 
 
 
