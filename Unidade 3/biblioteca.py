@@ -1,5 +1,7 @@
 import math # importa a biblioteca matemática
 import random # importa a biblioteca de números aleatórios
+import numpy as np # importa a biblioteca numpy para cálculos numéricos
+import pandas as pd # importa a biblioteca pandas para manipulação de dados
 
 nota = 6.4
 # print(round(nota)) # arredonda para o inteiro mais próximo
