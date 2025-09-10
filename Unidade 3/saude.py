@@ -1,5 +1,5 @@
-import numpy as np
-import pandas as pd
+import numpy as np 
+import pandas as pd # Para instalar a biblioteca, use: pip install pandas
 
 class Paciente:
     def __init__(self, nome, idade, sexo, peso, altura):

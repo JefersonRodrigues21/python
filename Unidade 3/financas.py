@@ -1,5 +1,5 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import pandas as pd # Para instalar a biblioteca, use: pip install pandas
+import matplotlib.pyplot as plt # Para instalar a biblioteca, use: pip install matplotlib
 
 class Investimento:
     def __init__(self, nome, valor, taxa, periodo):
